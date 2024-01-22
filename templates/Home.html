@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollabGo</title>
+    <style>
+        /* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and set font styles */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #1c3c69;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the dropdowns */
+.dropdown select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/* Style the search button */
+.search-button button {
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/* Style the logout link */
+.logout-button a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style the recommendation sections */
+.recommendations, .collaborators {
+    margin: 20px;
+}
+
+/* Style the recommendation entry container */
+.recommendation-entry {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 250px; /* Adjust as needed */
+}
+
+/* Style the recommendation entry title */
+.recommendation-entry h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Add animation to the recommendation entries */
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.recommendation-entry {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+/* Add horizontal scrolling for the recommendation sections */
+.scrollable {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="dropdown">
+            <select>
+                <option value="Skills">Skills</option>
+                <option value="Profession">Profession</option>
+                <option value="Interest">Interest</option>
+            </select>
+        </div>
+        <div class="dropdown">
+            <select>
+                <option value="Skills">Skills</option>
+                <option value="Profession">Profession</option>
+                <option value="Interest">Interest</option>
+            </select>
+        </div>
+         <div class="dropdown">
+            <select>
+                <option value="Skills">Skills</option>
+                <option value="Profession">Profession</option>
+                <option value="Interest">Interest</option>
+            </select>
+        </div>
+        <div class="search-button">
+            <button>Search</button>
+        </div>
+        <div class="logout-button">
+            <a href="/logout">Logout</a>
+        </div>
+    </header>
+
+    <section class="recommendations">
+        <h2>Recommended Projects</h2>
+        <div class="scrollable">
+            <!-- Your project recommendations go here -->
+            <!-- Sample project recommendation entry -->
+            <div class="recommendation-entry">
+                <h3>Project Title 1</h3>
+                <p>Description of Project 1</p>
+            </div>
+            <div class="recommendation-entry">
+                <h3>Project Title 1</h3>
+                <p>Description of Project 1</p>
+            </div>
+            <div class="recommendation-entry">
+                <h3>Project Title 1</h3>
+                <p>Description of Project 1</p>
+            </div>
+            <div class="recommendation-entry">
+                <h3>Project Title 1</h3>
+                <p>Description of Project 1</p>
+            </div>
+            <div class="recommendation-entry">
+                <h3>Project Title 1</h3>
+                <p>Description of Project 1</p>
+            </div> <div class="recommendation-entry">
+                <h3>Project Title 1</h3>
+                <p>Description of Project 1</p>
+            </div> <div class="recommendation-entry">
+                <h3>Project Title 1</h3>
+                <p>Description of Project 1</p>
+            </div> <div class="recommendation-entry">
+                <h3>Project Title 1</h3>
+                <p>Description of Project 1</p>
+            </div>
+            <!-- Add more project recommendations as needed -->
+        </div>
+    </section>
+
+    <section class="collaborators">
+        <h2>Recommended Collaborators</h2>
+        <div class="scrollable">
+            <!-- Your collaborator recommendations go here -->
+            <!-- Sample collaborator recommendation entry -->
+            <div class="recommendation-entry">
+                <h3>Collaborator Name 1</h3>
+                <p>Profession: Developer</p>
+                <p>Skills: Web Development, JavaScript</p>
+            </div>
+            <div class="recommendation-entry">
+                <h3>Collaborator Name 1</h3>
+                <p>Profession: Developer</p>
+                <p>Skills: Web Development, JavaScript</p>
+            </div><div class="recommendation-entry">
+                <h3>Collaborator Name 1</h3>
+                <p>Profession: Developer</p>
+                <p>Skills: Web Development, JavaScript</p>
+            </div><div class="recommendation-entry">
+                <h3>Collaborator Name 1</h3>
+                <p>Profession: Developer</p>
+                <p>Skills: Web Development, JavaScript</p>
+            </div><div class="recommendation-entry">
+                <h3>Collaborator Name 1</h3>
+                <p>Profession: Developer</p>
+                <p>Skills: Web Development, JavaScript</p>
+            </div><div class="recommendation-entry">
+                <h3>Collaborator Name 1</h3>
+                <p>Profession: Developer</p>
+                <p>Skills: Web Development, JavaScript</p>
+            </div><div class="recommendation-entry">
+                <h3>Collaborator Name 1</h3>
+                <p>Profession: Developer</p>
+                <p>Skills: Web Development, JavaScript</p>
+            </div><div class="recommendation-entry">
+                <h3>Collaborator Name 1</h3>
+                <p>Profession: Developer</p>
+                <p>Skills: Web Development, JavaScript</p>
+            </div><div class="recommendation-entry">
+                <h3>Collaborator Name 1</h3>
+                <p>Profession: Developer</p>
+                <p>Skills: Web Development, JavaScript</p>
+            </div><div class="recommendation-entry">
+                <h3>Collaborator Name 1</h3>
+                <p>Profession: Developer</p>
+                <p>Skills: Web Development, JavaScript</p>
+            </div><div class="recommendation-entry">
+                <h3>Collaborator Name 1</h3>
+                <p>Profession: Developer</p>
+                <p>Skills: Web Development, JavaScript</p>
+            </div><div class="recommendation-entry">
+                <h3>Collaborator Name 1</h3>
+                <p>Profession: Developer</p>
+                <p>Skills: Web Development, JavaScript</p>
+            </div>
+            <!-- Add more collaborator recommendations as needed -->
+        </div>
+    </section>
+</body>
+</html>

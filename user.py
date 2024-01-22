@@ -28,3 +28,9 @@ class User(UserMixin):
             (id_, name, email, profile_pic),
         )
         db.commit()
+
+    @staticmethod
+    def isInterestEmpty(User_id):
+        db = get_db()
+        return db.execute("SELECT interests FROM user WHERE =id ?",(User_id)).fetchone()
+

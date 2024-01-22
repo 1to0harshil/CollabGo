@@ -55,6 +55,11 @@ def load_user(user_id):
 
 @app.route("/")
 def index():
+    if(User.is_authenticated and User.isInterestEmpty == False):
+        return render_template("Home.html", current_user=current_user)
+    elif(User.is_authenticated and User.isInterestEmpty):
+        return render_template("Form.html", current_user=current_user)
+
     return render_template("index.html", current_user=current_user)
 
 
@@ -108,6 +113,7 @@ def callback():
         users_email = userinfo_response.json()["email"]
         picture = userinfo_response.json()["picture"]
         users_name = userinfo_response.json()["given_name"]
+ 
     else:
         return "User email not available or not verified by Google.", 400
 
@@ -121,6 +127,7 @@ def callback():
     login_user(user)
 
     # Send user back to homepage
+    
     return redirect(url_for("index"))
 
 
